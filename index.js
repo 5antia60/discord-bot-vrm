@@ -18,20 +18,16 @@ client.on('ready', () => {
 });
 
 client.on('message', async (msg) => { 
-  //responder -> msg.reply('dasdsadsa');
   if(msg.author.bot||!msg.guild||!msg.content.startsWith(config.prefix)) return;
   if (msg.author.bot) return;
   
   switch (msg.author.username){
     case 'Santiag0':
       //enviar
-      msg.channel.send('salve monstro sagrado');
-      break;
-    case 'mayheusaj':
-      msg.channel.send('eae baiano');
+      msg.channel.send('hi');
       break;
     default:
-      msg.channel.send('fala viado');
+      msg.channel.send('hello');
       break;
   }
 
